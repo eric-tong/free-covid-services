@@ -11,3 +11,9 @@ header {
     max-width: 25rem;
   }
 }
+
+#description {
+  max-width: var(--section-max-width);
+  margin: 2rem auto;
+  line-height: 1.75rem;
+}
