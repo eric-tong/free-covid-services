@@ -1,17 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 html {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 16px;
+  background: var(--background);
   color: var(--font);
 
-  --background: #fafafa;
   --font: #636363;
-  --primary: #002147;
+  --font-strong: #2f2f2f;
+  --subtle: #b0bec5;
+  --disabled: #aaa;
+  --background: #fafafa;
+  --section-max-width: 55rem;
 }
 
 h1 {
-  font-family: Roboto Slab;
-  font-weight: normal;
+  color: var(--font-strong);
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.5rem;
 }
