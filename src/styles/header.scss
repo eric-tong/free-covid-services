@@ -5,6 +5,30 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  h1 {
+    display: flex;
+    cursor: pointer;
+    align-items: baseline;
+
+    span[role="img"] {
+      margin-right: 0.25em;
+    }
+
+    .collapsed {
+      display: inline-block;
+      max-width: 0;
+      transition: max-width 500ms;
+      font-size: 0.75em;
+      overflow: hidden;
+    }
+
+    &:hover {
+      .collapsed {
+        max-width: 10em;
+      }
+    }
+  }
+
   p {
     font-size: 1.125em;
     color: var(--subtle);

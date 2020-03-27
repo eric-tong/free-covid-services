@@ -9,8 +9,10 @@ export default function Header() {
         <h1>
           <span role="img" aria-label="Orange heart emoji">
             🧡
-          </span>{" "}
-          FCS
+          </span>
+          F<span className="collapsed">ree</span>C
+          <span className="collapsed">ovid</span>S
+          <span className="collapsed">ervices</span>
         </h1>
         <p>
           An{" "}

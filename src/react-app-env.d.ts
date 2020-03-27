@@ -6,3 +6,5 @@ declare type Service = {
   url: string;
   startDate?: string;
 };
+
+declare type Section = Map<string, Service[]>;
