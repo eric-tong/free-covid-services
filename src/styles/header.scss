@@ -1,13 +1,13 @@
 header {
   max-width: var(--section-max-width);
   margin: 0 auto;
-  padding: 2rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   p {
+    font-size: 1.125em;
     color: var(--subtle);
-    max-width: 30rem;
+    max-width: 25rem;
   }
 }

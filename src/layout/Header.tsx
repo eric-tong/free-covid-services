@@ -12,8 +12,12 @@ export default function Header() {
         FCS
       </h1>
       <p>
-        An open-source directory of companies offering free and discounted
-        services during the COVID-19 pandemic.
+        An{" "}
+        <a href="https://github.com/eric-tong/free-covid-services">
+          open-source
+        </a>{" "}
+        directory of companies offering free and discounted services during the
+        COVID-19 pandemic.
       </p>
     </header>
   );
