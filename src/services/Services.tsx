@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <>
       {services.map(service => (
-        <p>{service.name}</p>
+        <p>{JSON.stringify(service)}</p>
       ))}
     </>
   );

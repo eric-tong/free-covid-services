@@ -8,7 +8,17 @@ export default function useServices() {
   useEffect(() => {
     servicesTable
       .select({
-        view: "Grid view"
+        fields: [
+          "name",
+          "subsection",
+          "section",
+          "description",
+          "url",
+          "type",
+          "startDate",
+          "endDate"
+        ],
+        filterByFormula: "enabled"
       })
       .firstPage()
       .then(records => records.map(record => record.fields))
