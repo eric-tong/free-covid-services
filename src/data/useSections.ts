@@ -19,6 +19,7 @@ function useServices() {
           "subsection",
           "section",
           "description",
+          "icon",
           "url",
           "type",
           "startDate",
@@ -52,8 +53,13 @@ function groupServicesIntoSections(services: Service[]): Section[] {
   });
   return Array.from(sections.entries()).map(([sectionName, subsection]) => ({
     name: sectionName,
-    subsections: Array.from(
-      subsection.entries()
-    ).map(([subsectionName, services]) => ({ name: subsectionName, services }))
+    icon: (subsection.values() as Iterator<Service[], Service[]>).next()
+      .value[0].icon,
+    subsections: Array.from(subsection.entries()).map(
+      ([subsectionName, services]) => ({
+        name: subsectionName,
+        services
+      })
+    )
   }));
 }

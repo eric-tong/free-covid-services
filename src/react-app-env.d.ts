@@ -5,6 +5,7 @@ declare type Service = {
   subsection: string;
   section: string;
   description: string;
+  icon: string;
   url: string;
   type: "free" | "discount";
   startDate?: string;
@@ -16,5 +17,6 @@ declare type Subsection = {
 };
 declare type Section = {
   name: string;
+  icon: string;
   subsections: Subsection[];
 };

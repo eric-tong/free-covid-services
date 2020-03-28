@@ -12,7 +12,9 @@ export default function Section({
 }) {
   return (
     <section style={{ background: color }}>
-      <h2>{section.name}</h2>
+      <h2>
+        {section.icon} {section.name}
+      </h2>
       {section.subsections.map(subsection => (
         <Subsection key={subsection.name} subsection={subsection} />
       ))}
