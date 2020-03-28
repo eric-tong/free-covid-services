@@ -4,6 +4,7 @@ declare type Service = {
   name: string;
   description: string;
   url: string;
+  type: "free" | "discount";
   startDate?: string;
 };
 
