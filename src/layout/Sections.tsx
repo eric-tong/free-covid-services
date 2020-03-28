@@ -1,3 +1,4 @@
+import { BACKGROUND_COLORS } from "../utils/constants";
 import React from "react";
 import Section from "../services/Section";
 import useSections from "../data/useSections";
@@ -9,9 +10,13 @@ export default function Sections() {
 
   if (sections.length) {
     return (
-      <main id={MAIN_ID} className="middle">
-        {sections.map(section => (
-          <Section section={section} />
+      <main id={MAIN_ID}>
+        {sections.map((section, i) => (
+          <Section
+            key={section.name}
+            section={section}
+            color={BACKGROUND_COLORS[i % BACKGROUND_COLORS.length]}
+          />
         ))}
       </main>
     );
