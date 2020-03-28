@@ -3,13 +3,13 @@ import "../styles/main-styles.scss";
 
 import Header from "./Header";
 import React from "react";
-import Services from "../services/Services";
+import Sections from "./Sections";
 
 function App() {
   return (
     <>
       <Header />
-      <Services />
+      <Sections />
     </>
   );
 }
