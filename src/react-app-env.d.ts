@@ -10,3 +10,11 @@ declare type Service = {
   startDate?: string;
   endDate?: string;
 };
+declare type Subsection = {
+  name: string;
+  services: Service[];
+};
+declare type Section = {
+  name: string;
+  subsections: Subsection[];
+};

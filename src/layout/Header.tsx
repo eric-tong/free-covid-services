@@ -5,7 +5,7 @@ import React from "react";
 export default function Header() {
   return (
     <>
-      <header>
+      <header className="middle">
         <h1>
           <span role="img" aria-label="Orange heart emoji">
             🧡

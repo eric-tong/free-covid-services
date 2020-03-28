@@ -21,6 +21,11 @@ html {
   }
 }
 
+.middle {
+  max-width: var(--section-max-width);
+  margin: 0 auto;
+}
+
 body {
   font-size: 0.75rem;
   padding: 2rem 0;
