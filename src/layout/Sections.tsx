@@ -24,7 +24,7 @@ export default function Sections() {
     const preloadedElement = document.getElementById(MAIN_ID);
     return (
       preloadedElement && (
-        <section
+        <main
           id={MAIN_ID}
           dangerouslySetInnerHTML={{
             __html: preloadedElement?.innerHTML.toString()
