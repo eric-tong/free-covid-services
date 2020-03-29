@@ -5,8 +5,13 @@ export default function Service({ service }: { service: Service }) {
     <div className="service">
       <h3>{service.name}</h3>
       <p>{service.description}</p>
-      <div className="tags">{service.type === "free" && <Tag />}</div>
-      <a target="_blank" className="button" href={service.url}>
+      <div className="tags">{service.type === "Free" && <Tag />}</div>
+      <a
+        className="button"
+        href={service.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         View
       </a>
     </div>

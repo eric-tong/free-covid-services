@@ -7,7 +7,7 @@ declare type Service = {
   description: string;
   icon: string;
   url: string;
-  type: "free" | "discount";
+  type: "Free" | "Discount";
   startDate?: string;
   endDate?: string;
 };

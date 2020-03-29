@@ -61,3 +61,11 @@ a {
     font-weight: 600;
   }
 }
+
+.tag {
+  display: inline-block;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  color: var(--primary);
+}
