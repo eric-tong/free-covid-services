@@ -27,12 +27,8 @@ export default function Header() {
         From free theatre performances to software discounts, we have curated a
         list of free or discounted services that might be helpful to you or your
         business during these difficult times. If you are a small business
-        offering a helpful service and would like to be featured here, please{" "}
-        <a href="/reach-out">reach out</a> or send{" "}
-        <a href="https://github.com/eric-tong/free-covid-services">
-          a pull request
-        </a>
-        .
+        offering a helpful service and would like to be featured here, please
+        fill in <a href="https://airtable.com/shrXH3xUFypxOS6yb">this form</a>.
       </h2>
     </>
   );
