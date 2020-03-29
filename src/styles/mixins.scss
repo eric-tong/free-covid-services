@@ -1,0 +1,25 @@
+$screen-small: 480px;
+$screen-medium: 600px;
+$screen-large: 1000px;
+
+@mixin rwd($screen) {
+  @media only screen and (max-width: $screen) {
+    @content;
+  }
+}
+
+@mixin small {
+  @include rwd(#{$screen-small}) {
+    @content;
+  }
+}
+@mixin medium {
+  @include rwd(#{$screen-medium}) {
+    @content;
+  }
+}
+@mixin large {
+  @include rwd(#{$screen-large}) {
+    @content;
+  }
+}
