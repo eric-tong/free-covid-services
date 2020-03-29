@@ -5,16 +5,23 @@ import Service from "./Service";
 
 export default function Section({
   section,
-  color
+  color: { primary, background }
 }: {
   section: Section;
-  color: string;
+  color: Color;
 }) {
   return (
-    <section style={{ background: color }}>
-      <h2>
+    <section
+      style={
+        {
+          "--primary": primary,
+          "--background": background
+        } as React.CSSProperties
+      }
+    >
+      <h1>
         {section.icon} {section.name}
-      </h2>
+      </h1>
       {section.subsections.map(subsection => (
         <Subsection key={subsection.name} subsection={subsection} />
       ))}
@@ -25,10 +32,12 @@ export default function Section({
 function Subsection({ subsection }: { subsection: Subsection }) {
   return (
     <>
-      <h3>{subsection.name}</h3>
-      {subsection.services.map(service => (
-        <Service key={service.name} service={service} />
-      ))}
+      <h2>{subsection.name}</h2>
+      <div className="grid">
+        {subsection.services.map(service => (
+          <Service key={service.name} service={service} />
+        ))}
+      </div>
     </>
   );
 }

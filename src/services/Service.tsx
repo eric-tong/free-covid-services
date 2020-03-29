@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Service({ service }: { service: Service }) {
   return (
-    <>
-      <h4>{service.name}</h4>
+    <div className="service">
+      <h3>{service.name}</h3>
       <p>{service.description}</p>
-    </>
+    </div>
   );
 }

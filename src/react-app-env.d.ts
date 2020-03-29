@@ -20,3 +20,7 @@ declare type Section = {
   icon: string;
   subsections: Subsection[];
 };
+declare type Color = {
+  primary: string;
+  background: string;
+};

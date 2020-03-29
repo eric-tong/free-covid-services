@@ -1,6 +1,6 @@
-import { BACKGROUND_COLORS } from "../utils/constants";
 import React from "react";
 import Section from "../services/Section";
+import { getColorsFromIndex } from "../utils/colors";
 import useSections from "../data/useSections";
 
 const MAIN_ID = "sections";
@@ -15,7 +15,7 @@ export default function Sections() {
           <Section
             key={section.name}
             section={section}
-            color={BACKGROUND_COLORS[i % BACKGROUND_COLORS.length]}
+            color={getColorsFromIndex(i)}
           />
         ))}
       </main>
