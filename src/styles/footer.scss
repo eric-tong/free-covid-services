@@ -1,0 +1,27 @@
+@import "./mixins.scss";
+
+footer {
+  display: flex;
+  align-items: center;
+  min-height: 20rem;
+
+  @include small {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h2 {
+    width: 60%;
+
+    @include small {
+      width: auto;
+      text-align: center;
+    }
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+    margin: 1rem auto;
+  }
+}

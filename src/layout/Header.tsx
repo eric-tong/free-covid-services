@@ -16,7 +16,11 @@ export default function Header() {
         </h1>
         <p>
           An{" "}
-          <a href="https://github.com/eric-tong/free-covid-services">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/eric-tong/free-covid-services"
+          >
             open-source
           </a>{" "}
           directory of organisations offering free and discounted services
@@ -28,7 +32,15 @@ export default function Header() {
         list of free or discounted services that might be helpful to you or your
         business during these difficult times. If you are an organisation
         offering a helpful service and would like to be featured here, please
-        fill in <a href="https://airtable.com/shrXH3xUFypxOS6yb">this form</a>.
+        fill in{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://airtable.com/shrXH3xUFypxOS6yb"
+        >
+          this form
+        </a>
+        .
       </h2>
     </>
   );
