@@ -47,4 +47,17 @@ p {
 a {
   @extend .fade-on-hover;
   color: inherit;
+
+  &.button {
+    display: block;
+    text-align: center;
+    background: var(--primary);
+    text-decoration: none;
+    color: var(--page-background);
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    font-weight: 600;
+  }
 }
