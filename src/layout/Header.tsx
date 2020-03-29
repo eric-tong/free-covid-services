@@ -19,8 +19,8 @@ export default function Header() {
           <a href="https://github.com/eric-tong/free-covid-services">
             open-source
           </a>{" "}
-          directory of companies offering free and discounted services during
-          the COVID-19 pandemic.
+          directory of organisations offering free and discounted services
+          during the COVID-19 pandemic.
         </p>
       </header>
       <h2 id="description">
